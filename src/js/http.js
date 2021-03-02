@@ -1,11 +1,15 @@
+//Create class for http call to github API and export
+
 class Http {
 
-  async get(){
-    const response = await fetch('https://api.github.com/users');
+  async get(user){
+    const responseData = await fetch(`https://api.github.com/users/${user}`);
 
-    const data = await response.json();
+    const response = await responseData.json();
 
-    return data;
+    return {
+      response
+    }
     
   }
 }
