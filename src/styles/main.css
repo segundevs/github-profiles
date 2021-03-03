@@ -29,6 +29,7 @@ body {
 
   h2,
   p {
+    margin-bottom: 2px;
     color: #35373a;
   }
 
@@ -58,11 +59,13 @@ body {
     align-items: center;
     text-align: center;
   }
+
   .username {
     justify-content: center;
     text-align: center;
     margin-bottom: 10px;
   }
+
   img {
     width: 200px;
     height: 200px;
@@ -70,5 +73,92 @@ body {
     align-self: center;
     border-radius: 50%;
     margin: 5px 10px 20px 10px;
+  }
+
+  .btn-primary {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #f7f8fb;
+    background: #29baf6;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .line {
+    width: 1px;
+    height: 50px;
+    background-color: #656e81;
+  }
+
+  .users > div :not(.line) {
+    padding: 5px 10px;
+  }
+
+  .sub-heading {
+    margin: 15px 0;
+    padding: 5px;
+    font-size: 1.8rem;
+  }
+
+  .repos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .repo-data {
+    margin: 10px;
+  }
+
+  span {
+    border: 1px solid #29baf6;
+    padding: 6px;
+    margin-left: 8px;
+    border-radius: 10px;
+    color: #29baf6;
+  }
+
+  .repo-name {
+    text-decoration: none;
+  }
+
+  .pink {
+    color: #e8508e;
+    border: 1px solid #e8508e;
+  }
+
+  .orange {
+    color: #cf9c61;
+    border: 1px solid #cf9c61;
+  }
+
+  .blue {
+    display: none;
+  }
+
+  .error {
+    background-color: #f5f4f4;
+    color: rgb(82, 1, 1);
+    font-weight: bold;
+    margin: 10px 0 -10px 0;
+    font-size: 16px;
+    width: 100%;
+    padding: 0.8em 0.75em;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  footer {
+    display: block;
+    box-shadow: 0 8px 6px -6px #eeecec;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 5px;
+    color: #656e81;
   }
 }
