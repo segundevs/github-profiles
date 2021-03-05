@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -94,6 +95,10 @@ p {
   margin: 20px 40px 40px 40px;
 }
 
+.user-profile {
+  padding: 0 5px;
+}
+
 .users-profiles {
   display: flex;
   box-shadow: 0 8px 6px -6px #eeecec;
@@ -165,8 +170,8 @@ p {
 span {
   border: 1px solid var(--primary-color);
   font-size: 18px;
-  padding: 10px;
-  margin-left: 15px;
+  padding: 5px;
+  margin-left: 10px;
   border-radius: 10px;
   color: var(--primary-color);
 }
@@ -201,7 +206,7 @@ footer {
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   h2,
@@ -265,11 +270,12 @@ footer {
   }
 
   .repo-data {
-    margin: 10px;
+    margin-bottom: 10px;
   }
 
   .repo-link {
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 600;
   }
 
   span {

@@ -76,14 +76,14 @@ class UI {
   showAlert(msg, className){
     this.clearAlert();
     //Build container(div) for alert message
-    const header = document.querySelector('header');
-    const inputField = document.querySelector('.github-username');
+    const container = document.querySelector('.container');
+    const insert = document.querySelector('.insert');
 
     const div = document.createElement('div');
     div.className = className;
     div.appendChild(document.createTextNode(msg));
 
-    header.insertBefore(div, inputField);
+    container.insertBefore(div, insert);
 
     //Make alerts disappear after 3secs
     setTimeout(()=>{
