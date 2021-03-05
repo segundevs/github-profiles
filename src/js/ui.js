@@ -8,28 +8,45 @@ class UI {
   //Method to display user profile (takes in the users response from api call as a parameter)
   showUser(user){
     this.githubUsers.innerHTML = `
-  <div class="user-profile">
+    <div class="users-profiles">
       <div class="username">
           <img src="${user.avatar_url}" alt="Vacation">
           <a href="${user.html_url}" target="_blank" class="btn-primary" >View Profile</a>
       </div>
-      <div class="users">
-          <div>
-            <h2>${user.followers}</h2>
-            <p>Followers</p>
+
+      <div class=""user-details>
+        <div class="users">
+            <div>
+              <h2>${user.followers}</h2>
+              <p>Followers</p>
+            </div>
+          <div class="line1"></div>
+            <div>
+              <h2>${user.following}</h2>
+              <p>Following</p>
+            </div>
+          <div class="line2"></div>
+            <div>
+              <h2>${user.public_repos}</h2>
+              <p>Public Repos</p>
+            </div>
+          <div class="line3"></div>
+          <div class="gists">
+              <h2>${user.public_gists}</h2>
+              <p>Public Gists</p>
           </div>
-        <div class="line"></div>
-          <div>
-            <h2>${user.following}</h2>
-            <p>Following</p>
-          </div>
-        <div class="line"></div>
-          <div>
-            <h2>${user.public_repos}</h2>
-            <p>Public Repos</p>
-          </div>
+        </div>
+
+        <div class="description">
+            <h3>Company: ${user.company}</h3>
+            <h3>Website: ${user.blog}</h3>
+            <h3>Location: ${user.location}</h3>
+            <h3>Member since: ${user.created_at}</h3>
+            <h3>Bio: ${user.bio}</h3>
+        </div>
       </div>
-  </div>
+  </div>    
+  
 <h2 class="sub-heading">Public Repos</h2>
 <div class="repos-container"></div>
     `
@@ -41,8 +58,8 @@ class UI {
     repos.forEach((repo) => {
       output+=`
     <div class="repos">
-      <div>
-        <a class="repo-name" href="${repo.html_url}" target="_blank">${repo.name}</a>
+      <div class="repo-name">
+        <a class="repo-link" href="${repo.html_url}" target="_blank">${repo.name}</a>
       </div>
       <div class="repo-data">
         <span class="pink">Stars: ${repo.stargazers_count}</span>

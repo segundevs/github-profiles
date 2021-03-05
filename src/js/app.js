@@ -9,7 +9,7 @@ const userInput = document.querySelector('.github-username');
 userInput.addEventListener('keyup', searchUser);
 
 function searchUser(e){
-  console.log(process.env)
+  
   //Assign the value of the user input to a variable
   const searchItem = e.target.value
   //Check if user input in not empty
