@@ -5,7 +5,7 @@ class UI {
     this.githubUsers = document.querySelector('.user-profile');
   }
 
-  //Method to display user profile (takes in the users response from api call as a parameter)
+  //Method to display user profile (takes in the users response from api call as a parameter!!!)
   showUser(user){
     this.githubUsers.innerHTML = `
     <div class="users-profiles">
